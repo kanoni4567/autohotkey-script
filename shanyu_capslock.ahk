@@ -5,6 +5,10 @@ SetCapsLockState, AlwaysOff
 CapsLock & Esc::Send {Blind}{`` Down}
 CapsLock & Esc up::Send {Blind}{`` Up}
 
+; Capslock + Backspace (Delete)
+CapsLock & Backspace::Send {Blind}{Delete Down}
+CapsLock & Backspace up::Send {Blind}{Delete Up}
+
 ; Capslock + jkli (left, down, up, right)
 
 Capslock & j::Send {Blind}{Left DownTemp}
