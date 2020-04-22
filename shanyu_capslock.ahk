@@ -1,5 +1,3 @@
-UseArrowKey := 1
-
 #Persistent
 SetCapsLockState, AlwaysOff
 
@@ -48,20 +46,6 @@ Capslock & q up::SendInput {Ctrl Up}{Tab Up}
 Capslock & Tab::SendInput {Ctrl Down}{Shift Down}{Tab Down}
 Capslock & Tab up::SendInput {Ctrl Up}{Shift Up}{Tab Up}
 
-// Capslock + number keys equal function keys (F1-F10)
-
-Capslock & 1::SendInput {Blind}{F1}
-Capslock & 2::SendInput {Blind}{F2}
-Capslock & 3::SendInput {Blind}{F3}
-Capslock & 4::SendInput {Blind}{F4}
-Capslock & 5::SendInput {Blind}{F5}
-Capslock & 6::SendInput {Blind}{F6}
-Capslock & 7::SendInput {Blind}{F7}
-Capslock & 8::SendInput {Blind}{F8}
-Capslock & 9::SendInput {Blind}{F9}
-Capslock & 0::SendInput {Blind}{F10}
-Capslock & -::SendInput {Blind}{F11}
-Capslock & =::SendInput {Blind}{F12}
 
 ; Make Win Key + Capslock work like Capslock (in case it's ever needed)
 #Capslock::
