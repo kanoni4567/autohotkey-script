@@ -32,11 +32,11 @@ Capslock & u up::SendInput {Blind}{Home Up}
 Capslock & o::SendInput {Blind}{End Down}
 Capslock & o up::SendInput {Blind}{End Up}
 
-; Capslock & y::SendInput {Blind}{PgUp Down}
-; Capslock & y up::SendInput {Blind}{PgUp Up}
+Capslock & y::SendInput {Blind}{PgUp Down}
+Capslock & y up::SendInput {Blind}{PgUp Up}
 
-; Capslock & h::SendInput {Blind}{PgDn Down}
-; Capslock & h up::SendInput {Blind}{PgDn Up}
+Capslock & h::SendInput {Blind}{PgDn Down}
+Capslock & h up::SendInput {Blind}{PgDn Up}
 
 
 ; Capslock + TAB/q (prev/next tab)
