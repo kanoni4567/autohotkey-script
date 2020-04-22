@@ -11,16 +11,16 @@ CapsLock & Esc up::Send {Blind}{`` Up}
 CapsLock & Backspace::Send {Blind}{Delete Down}
 CapsLock & Backspace up::Send {Blind}{Delete Up}
 
-; Capslock + jkli (left, down, up, right)
+; Capslock + hjkl (left, down, up, right)
 
-Capslock & j::Send {Blind}{Left DownTemp}
-Capslock & j up::Send {Blind}{Left Up}
+Capslock & h::Send {Blind}{Left DownTemp}
+Capslock & h up::Send {Blind}{Left Up}
 
-Capslock & k::Send {Blind}{Down DownTemp}
-Capslock & k up::Send {Blind}{Down Up}
+Capslock & j::Send {Blind}{Down DownTemp}
+Capslock & j up::Send {Blind}{Down Up}
 
-Capslock & i::Send {Blind}{Up DownTemp}
-Capslock & i up::Send {Blind}{Up Up}
+Capslock & k::Send {Blind}{Up DownTemp}
+Capslock & k up::Send {Blind}{Up Up}
 
 Capslock & l::Send {Blind}{Right DownTemp}
 Capslock & l up::Send {Blind}{Right Up}
@@ -71,34 +71,64 @@ Else
     SetCapsLockState, AlwaysOn
 Return
 
-; Arrow keys
-#RAlt::
-    UseArrowKey := UseArrowKey*(-1)
+; ; Arrow keys
+; #RAlt::
+;     UseArrowKey := UseArrowKey*(-1)
 
-RAlt::
-    If (UseArrowKey = 1)
-        Send, {LEFT}
-    Else 
-        Send, {RAlt}
-    Return
 
-RWin::
-    If (UseArrowKey = 1)
-        Send, {DOWN}
-    Else
-        Send, {RWin}
-    Return
+; RAlt::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{Left DownTemp}
+;     Else 
+;         Send, {RAlt DownTemp}
+;     Return
 
-RControl::
-    If (UseArrowKey = 1)
-        Send, {RIGHT}
-    Else 
-        Send, {RControl}
-    Return
+; RAlt up::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{Left Up}
+;     Else 
+;         Send, {RAlt Up}
+;     Return
 
-RShift Up::
-    If (UseArrowKey = 1) and (A_PriorKey = "RShift")
-        Send, {Up}
-    Else 
-        Send, {RShift}
-    Return
+; RWin::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{Down DownTemp}
+;     Else 
+;         Send, {RWin DownTemp}
+;     Return
+
+; RWin up::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{Down Up}
+;     Else 
+;         Send, {RWin Up}
+;     Return
+
+
+; RControl::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{RIGHT DownTemp}
+;     Else 
+;         Send, {RControl DownTemp}
+;     Return
+
+; RControl up::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{RIGHT Up}
+;     Else 
+;         Send, {RControl Up}
+;     Return
+
+; RShift::
+;     If (UseArrowKey = 1)
+;         Send, {Blind}{Up DownTemp}
+;     Else 
+;         Send, {RShift DownTemp}
+;     Return
+
+; RShift up::
+;     If (UseArrowKey = 1) and (A_PriorKey = "RShift")
+;         Send, {Blind}{Up Up}
+;     Else 
+;         Send, {RShift Up}
+;     Return
