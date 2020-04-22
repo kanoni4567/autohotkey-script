@@ -9,16 +9,16 @@ CapsLock & Esc up::Send {Blind}{`` Up}
 CapsLock & Backspace::Send {Blind}{Delete Down}
 CapsLock & Backspace up::Send {Blind}{Delete Up}
 
-; Capslock + hjkl (left, down, up, right)
+; Capslock + jkli (left, down, up, right)
 
-Capslock & h::Send {Blind}{Left DownTemp}
-Capslock & h up::Send {Blind}{Left Up}
+Capslock & j::Send {Blind}{Left DownTemp}
+Capslock & j up::Send {Blind}{Left Up}
 
-Capslock & j::Send {Blind}{Down DownTemp}
-Capslock & j up::Send {Blind}{Down Up}
+Capslock & k::Send {Blind}{Down DownTemp}
+Capslock & k up::Send {Blind}{Down Up}
 
-Capslock & k::Send {Blind}{Up DownTemp}
-Capslock & k up::Send {Blind}{Up Up}
+Capslock & i::Send {Blind}{Up DownTemp}
+Capslock & i up::Send {Blind}{Up Up}
 
 Capslock & l::Send {Blind}{Right DownTemp}
 Capslock & l up::Send {Blind}{Right Up}
